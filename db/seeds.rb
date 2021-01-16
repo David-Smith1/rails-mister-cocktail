@@ -7,9 +7,18 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 puts "Seeding"
+Cocktail.destroy_all
+Dose.destroy_all
+
 10.times do 
     Cocktail.create(
         name: Faker::Beer.name
+    )
+end
+
+10.times do 
+    Dose.create(
+        description: "#{rand(1..3)} parts ____________"
     )
 end
 
