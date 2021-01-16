@@ -1,0 +1,9 @@
+<%= link_to "Add a cocktail", new_cocktail_path  %>
+
+
+<% @cocktails.each do |cocktail| %>
+  <div class="card">
+    <%= link_to cocktail.name,cocktail_path(cocktail)  %>
+    <%= link_to 'Delete', cocktail_path(cocktail), method: :delete, data: {confirm: 'Are you sure?'}  %>    
+  </div>
+<% end %>
