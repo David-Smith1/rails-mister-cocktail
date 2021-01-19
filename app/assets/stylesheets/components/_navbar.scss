@@ -1,12 +1,55 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: transparent;
+.navbar {
+  background-color: transparent;
+  transition: 0.5s background-color ease;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.navbar-blue {
+   background-color: #2A9D8F;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.navbar a {
+  color: white;
+  font-size: 24px;
+  padding-left: 16px;
+  opacity: 100%;
+  padding-top: 5px;
+  position: relative;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.navbar a:hover {
+  color: white;
+  font-size: 24px;
+  padding-left: 16px;
+  opacity: 80%;
+
+}
+
+
+.footer {
+  background-color: #2A9D8F;
+  color: white;
+}
+
+.footer a {
+  pointer-events: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.crown { 
+  position: absolute;
+  top: -9px;
+  right: 3px;
+  font-size: 14px;
+  opacity: 0%;
+  color: #e9c46a;
+  transition: opacity 0.15s ease-in-out;
+}
+
+a:hover .crown{
+  opacity:100%;
+  color: #e9c46a;
 }

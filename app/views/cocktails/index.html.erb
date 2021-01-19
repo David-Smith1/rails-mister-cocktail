@@ -1,11 +1,10 @@
  <div class="banner">
-    
-      <div class="container">
-        <h1>Find your Drink</h1>
-        <p>Something something tagline search.</p>
-        <a class="btn btn-primary" href="#">Search</a>
-      </div>
-    </div>
+   <div class="container container-slider">
+     <div class="slider">
+       <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+     </div>
+  </div>
+</div>
 
 
 
@@ -19,7 +18,7 @@
           <%= link_to cocktail.name,cocktail_path(cocktail)  %>
           <div class="delete-button">
             <%= link_to cocktail_path(cocktail), method: :delete, data: {confirm: "Are you sure you want to delete #{cocktail.name}?"} do %>
-                <i class="fas fa-trash"> </i> 
+              <i class="fas fa-trash"> </i> 
             <% end %>
           </div>  
       </div>
@@ -27,3 +26,9 @@
     <% end %>
   </div>
 </div>
+<footer class="footer text-center text-lg-start">
+  <div class="text-center p-3">
+    <i class="fas fa-glass-martini-alt"></i>
+    <a>Cocktail King</a>
+  </div>
+</footer>

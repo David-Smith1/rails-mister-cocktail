@@ -6,26 +6,25 @@
     <title>RailsMisterCocktail</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
-    <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
-      </a>
-      <button class="btn btn-outline-primary my-6 my-sm-0" type="submit">Browse All</button>
+    <nav class="navbar fixed-top">
+      <%= link_to cocktails_path do %>
+        <i class="fas fa-glass-martini-alt"></i>
+        <div class="crown">
+          <i class="fas fa-crown"></i>
+        </div>
+      <% end %>
+      <%= link_to new_cocktail_path do %>
+        <button class="btn btn-light my-6 my-sm-0" type="submit">Add A New Cocktail</button>
+      <% end %>
     </nav>
+ 
 
     <%= yield %>
 
-    <footer class="bg-light text-center text-lg-start">
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        © 2020 Copyright:
-        <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-      </div>
-    </footer>
+    
   </body>
 </html>
