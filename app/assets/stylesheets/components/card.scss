@@ -75,3 +75,9 @@ a {
     margin: auto;
     
 }
+
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 260px;
+    }
+  }
