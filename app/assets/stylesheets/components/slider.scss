@@ -2,7 +2,6 @@
     -webkit-appearance: none;
     width: 300px;
     margin: auto;
-    margin-top: 100px;
     height: 15px;
     border-radius: 5px;  
     background: #d3d3d3;
@@ -20,7 +19,6 @@
     border-radius: 50%; 
     background: #2a9d8f;
     cursor: pointer;
-    margin-top: 100px;
   }
   
   .slider::-moz-range-thumb {
@@ -29,5 +27,6 @@
     border-radius: 50%;
     background: #2a9d8f;
     cursor: pointer;
-    margin-top: 100px;
   }
+
+
