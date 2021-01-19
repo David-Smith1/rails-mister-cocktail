@@ -5,7 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-INGREDIENTS = ["lemon", "ice", "coke", "vodka"]
 file = HTTParty.get('https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list')
 ingredients_thing = JSON.parse(file.body)
 
