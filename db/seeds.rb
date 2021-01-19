@@ -7,18 +7,50 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 file = HTTParty.get('https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list')
 ingredients_thing = JSON.parse(file.body)
+# ingredients_thing["drinks"].sample["strIngredient1"]
 
 
 puts "Seeding"
 
 
+ 
+Cocktail.create!(
+    name: "Mojito"
+)
+Cocktail.create!(
+    name: "Gin & Tonic"
+)
+Cocktail.create!(
+    name: "Whiskey Sour"
+)
+Cocktail.create!(
+    name: "Margarita"
+)
+Cocktail.create!(
+    name: "Long Island Iced Tea"
+)
+Cocktail.create!(
+    name: "Bloody Mary"
+)
+Cocktail.create!(
+    name: "Dirty Shirley"
+)
+Cocktail.create!(
+    name: "Moscow Mule"
+)
+Cocktail.create!(
+    name: "White Russian"
+)
+Cocktail.create!(
+    name: "Cosmopolitan"
+)
+Cocktail.create!(
+    name: "Screwdriver"
+)
+Cocktail.create!(
+    name: "Daiquiri"
+)
 
-
-10.times do 
-    Ingredient.create(
-        name: ingredients_thing["drinks"].sample["strIngredient1"]
-    )
-end
 
 puts "Seeded!"
 
