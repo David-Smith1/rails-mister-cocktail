@@ -67,7 +67,7 @@ a {
 }
 
 .card {
-    background-color: rgba(38,70,83,0.7);
+    background-color: rgba(38,70,83,0.8);
     padding-top: 20px;
     padding-bottom: 20px;
     margin-top: 140px;
@@ -76,8 +76,30 @@ a {
     
 }
 
+.card-new {
+    background-color: rgba(38,70,83,0.8);
+    margin-top: 140px;
+    width: 700px;
+    margin: auto;
+    color: white;
+    margin-top: 100px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-bottom: 28px;
+    padding-top: 2px;
+}
+
+@media only screen and (max-width: 800px) {
+    .card-new {
+        width: 550px;
+    }
+  }
+
 @media only screen and (max-width: 600px) {
     .card {
         width: 260px;
     }
-  }
+    .card-new {
+        width: 260px;
+    }
+}

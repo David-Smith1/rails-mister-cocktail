@@ -10,10 +10,12 @@ ingredients_thing = JSON.parse(file.body)
 # ingredients_thing["drinks"].sample["strIngredient1"]
 
 
-puts "Seeding"
 
 
- 
+puts "cleaning database"
+Cocktail.destroy_all
+puts "creating cocktails...."
+
 Cocktail.create!(
     name: "Mojito"
 )
@@ -53,6 +55,17 @@ Cocktail.create!(
 
 
 puts "Seeded!"
+puts "cocktails created!!"
+
+puts "cleaning database"
+Ingredient.destroy_all
+
+puts "creating Ingredients...."
+99.times do
+  Ingredient.create(name: ingredients_thing["drinks"].sample["strIngredient1"])
+end
+puts "Ingredients created!!"
+puts "cleaning database"
 
 
 
