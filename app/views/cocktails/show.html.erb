@@ -27,7 +27,38 @@
               <% end %>
             </div>
             <% end %>
-          <%= link_to 'Add ingredient', new_cocktail_dose_path(@cocktail), class: 'btn btn-outline-light' %>
+<!-- Button trigger modal -->
+
+<%= link_to 'Add ingredient', new_cocktail_dose_path(@cocktail), :data => { :toggle => "modal", :target => "#exampleModalCenter" }, class: 'btn btn-outline-light' %>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+      </div>
+      <div class="modal-body text-left">
+         <%= simple_form_for [@cocktail, @dose], remote: true do |f| %>
+         <%= f.association :ingredient %>
+         <%= f.input :description %>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+         <%= f.submit "Add ingredient", class: "btn btn-outline-dark" %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+       
+
+
+
+
+
         </div>
       </div>
     </div>
