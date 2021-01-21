@@ -27,11 +27,11 @@
               <% end %>
             </div>
             <% end %>
-<!-- Button trigger modal -->
 
-<%= link_to 'Add ingredient', new_cocktail_dose_path(@cocktail), :data => { :toggle => "modal", :target => "#exampleModalCenter" }, class: 'btn btn-outline-light' %>
+<button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModalCenter">
+  Add ingredient
+</button>
 
-<!-- Modal -->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
@@ -39,7 +39,7 @@
         <h5 class="modal-title" id="exampleModalLongTitle"></h5>
       </div>
       <div class="modal-body text-left">
-         <%= simple_form_for [@cocktail, @dose], remote: true do |f| %>
+         <%= simple_form_for [@cocktail, @dose] do |f| %>
          <%= f.association :ingredient %>
          <%= f.input :description %>
       </div>
