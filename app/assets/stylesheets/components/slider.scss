@@ -29,6 +29,49 @@
     cursor: pointer;
   }
 
+  .slider-left-1 {
+    position: absolute;
+    top: 160px;
+    left: 30px;
+
+  }
+
+  .slider-left-2 {
+    position: absolute;
+    top: 260px;
+    left: 31px;
+  }
+
+  .slider-right-1 {
+    position: absolute;
+    top: 160px;
+    right: 36px;
+  }
+
+  .slider-right-2 {
+    position: absolute;
+    top: 260px;
+    right: 36px;
+  }
+
+  .slider-left-1 p{
+    font-family: 'Special Elite', cursive;
+
+  }
+
+  .slider-left-2 p{
+    font-family: 'Special Elite', cursive;
+  }
+
+  .slider-right-1 p{
+    font-family: 'Special Elite', cursive;
+  }
+
+  .slider-right-2 p{
+    font-family: 'Special Elite', cursive;
+  }
+
+
 
   @media only screen and (max-width: 600px) {
     .slider {

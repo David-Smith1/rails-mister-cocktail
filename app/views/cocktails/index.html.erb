@@ -12,17 +12,29 @@
        <br>
        <br>
          <form action="Submit">
+          <div class="slider-left-1">
+           <p>bitter</p>
+          </div>
+           <div class="slider-right-1">
+           <p>sweet</p>
+          </div>
+          <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+           <br>
+           <br>
+           <br>
+           <br>
+            <div class="slider-left-2">
+           <p>dry</p>
+          </div>
+           <div class="slider-right-2">
+           <p>refreshing</p>
+          </div>
            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
            <br>
            <br>
            <br>
            <br>
-           <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-           <br>
-           <br>
-           <br>
-           <br>
-           <button class="btn btn-outline-light my-6 my-sm-0" type="submit">Find your drink</button>
+             <%= link_to "Find your drink", cocktail_path(@cocktails.sample), class: "btn btn-outline-light" %>
          </form>
       </div>
     </div>
