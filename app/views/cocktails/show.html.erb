@@ -42,12 +42,12 @@
          <%= simple_form_for [@cocktail, @dose] do |f| %>
          <%= f.association :ingredient %>
          <%= f.input :description %>
+         <%= f.submit "Add ingredient", class: "btn btn-outline-dark text-right" %>
+         <%= f.submit "Cancel", class: "btn btn-secondary text-right", :data => {:dismiss => "modal"} %>
+         <% end %>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-         <%= f.submit "Add ingredient", class: "btn btn-outline-dark" %>
       </div>
-      <% end %>
     </div>
   </div>
 </div>
