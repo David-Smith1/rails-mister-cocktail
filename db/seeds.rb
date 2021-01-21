@@ -12,9 +12,6 @@ ingredients_thing = JSON.parse(file.body)
 
 
 
-puts "cleaning database"
-Cocktail.destroy_all
-puts "creating cocktails...."
 
 
 puts "Seeded!"
@@ -24,7 +21,7 @@ puts "cleaning database"
 Ingredient.destroy_all
 
 puts "creating Ingredients...."
-99.times do
+2000.times do
   Ingredient.create(name: ingredients_thing["drinks"].sample["strIngredient1"])
 end
 puts "Ingredients created!!"
