@@ -16,43 +16,6 @@ puts "cleaning database"
 Cocktail.destroy_all
 puts "creating cocktails...."
 
-Cocktail.create!(
-    name: "Mojito"
-)
-Cocktail.create!(
-    name: "Gin & Tonic"
-)
-Cocktail.create!(
-    name: "Whiskey Sour"
-)
-Cocktail.create!(
-    name: "Margarita"
-)
-Cocktail.create!(
-    name: "Long Island Iced Tea"
-)
-Cocktail.create!(
-    name: "Bloody Mary"
-)
-Cocktail.create!(
-    name: "Dirty Shirley"
-)
-Cocktail.create!(
-    name: "Moscow Mule"
-)
-Cocktail.create!(
-    name: "White Russian"
-)
-Cocktail.create!(
-    name: "Cosmopolitan"
-)
-Cocktail.create!(
-    name: "Screwdriver"
-)
-Cocktail.create!(
-    name: "Daiquiri"
-)
-
 
 puts "Seeded!"
 puts "cocktails created!!"
