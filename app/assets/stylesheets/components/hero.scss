@@ -1,7 +1,7 @@
 .banner {
     background-size: cover;
     background-position: center;
-    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(bar.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.5)), url(bar.jpg);
     padding: 150px 0;
     height: 880px;
 }
@@ -10,30 +10,39 @@
     margin: 0;
     color: white;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-    font-size: 32px;
-    font-weight: bold;
+    font-size: 64px;
+    font-family: 'Special Elite', cursive;
+}
+
+.banner h2 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 34px;
 }
   
 .banner p {
     font-size: 20px;
     color: white;
-    opacity: .7;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    opacity: 90%;
+    margin-left: 8px;
 }
 
 .banner-new {
     background-size: cover;
     background-position: center;
-    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(bar.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.5)), url(bar.jpg);
     padding: 150px 0;
     height: 980px;
 }
 
 .banner-show {
   background-size: cover;
-  background-position-y: 640px;
-  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(bar.jpg);
-  padding: 100px 0;
+ 
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4)), url(bar.jpg);
+  padding: 100px;
+  height: 200px;
 }
 
 
@@ -43,7 +52,7 @@
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     font-size: 64px;
     position: absolute;
-    bottom: -95px;
+    bottom: -100px;
     font-family: 'Special Elite', cursive;
 
 }
